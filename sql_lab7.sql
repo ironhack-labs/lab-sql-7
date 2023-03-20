@@ -43,6 +43,6 @@ group by rating;
 -- 7
 
 select rating, avg(length) as avg_duration
-from sakila.film
+from sakila.film	
 group by rating
 having avg (length) > 120
