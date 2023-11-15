@@ -26,7 +26,7 @@ from sakila.film
 group by rating;
 
 -- 6) What is the mean length of the film for each rating type?
-select rating, avg(length) as average_length
+select rating, round(avg(length), 2) as average_length
 from sakila.film
 group by rating;
 
